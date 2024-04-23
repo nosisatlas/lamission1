@@ -9,6 +9,8 @@
     />
     <!-- AOS animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- JIT SUPPORT, for using peer-* below -->
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
     <!-- Title -->
     <title>Lamission1</title>
   </head>
@@ -100,6 +102,22 @@
         </div>
       </div>
     </nav>
+    <!-- Langs form -->
+    <div class="md:relative">
+      <form
+        class="max-w-xs mx-auto md:absolute md:right-8 md:-top-6 md:z-10 md:mt-0 md:my-0 flex flex-row justify-end shadow-sm"
+      >
+        <select
+          id="countries"
+          name="lang"
+          class="bg-gray-50 border-0 text-gray-900 text-sm rounded-lg focus:ring-0 focus:border-green block w-28 p-2.5"
+          onchange="changeLanguage()"
+        >
+          <option value="fr" selected>Francais</option>
+          <option value="eng">Anglais</option>
+        </select>
+      </form>
+    </div>
 
     <!-- Home Heading -->
     <div
@@ -215,6 +233,23 @@
         mobileMenu.classList.toggle("hidden");
       });
     </script>
+    <!-- Changing langs -->
+    <script>
+      function changeLanguage() {
+        var selectElement = document.getElementById("language-select");
+        var selectedLanguage = selectElement.value;
+
+        // Hide/show content based on language selection
+        if (selectedLanguage === "en") {
+          document.querySelectorAll("english-content").style.display = "block";
+          document.querySelectorAll("french-content").style.display = "none";
+        } else if (selectedLanguage === "fr") {
+          document.querySelectorAll("english-content").style.display = "none";
+          document.querySelectorAll("french-content").style.display = "block";
+        }
+      }
+    </script>
+
     <!-- AOS animations script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
