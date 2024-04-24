@@ -7,6 +7,7 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- AOS animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- JIT SUPPORT, for using peer-* below -->
@@ -14,7 +15,7 @@
     <!-- Title -->
     <title>Lamission1</title>
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 overflow-x-hidden">
     <!-- Header -->
     <nav
       class="bg-gray-100 text-dark md:fixed md:top-0 md:w-full md:shadow-md md:z-10"
@@ -52,12 +53,14 @@
         </div>
         <!-- Primary Navigation -->
         <div
-          class="hidden md:flex md:flex-row flex-col items-center justify-end md:space-x-1 navigation-menu pb-3 md:pb-0 navigation-menu"
+          class="hidden gtpressuramono md:flex md:flex-row flex-col items-center justify-end md:space-x-1 navigation-menu pb-3 md:pb-0 navigation-menu"
         >
-          <a href="#home" class="py-2 px-3 block">Home</a>
-          <a href="#about" class="py-2 px-3 block">About</a>
+          <a href="#qui-sommes-nous" class="py-2 px-3 block"
+            >Qui sommes-nous ?</a
+          >
+          <a href="#nos-services" class="py-2 px-3 block">Nos services</a>
           <!-- Dropdown Menu -->
-          <div class="relative z-10">
+          <!-- <div class="relative z-10">
             <button
               class="dropdown-toggle py-2 px-3 hover:bg-gray-100 flex items-center gap-2 rounded"
               onclick="toggleDropdown()"
@@ -96,16 +99,16 @@
               >
               <a href="#" class="block px-6 py-2 hover:bg-gray-200">SEO</a>
             </div>
-          </div>
-
-          <a href="#" class="py-2 px-3 block">Contact</a>
+          </div> -->
+          <a href="#clients" class="py-2 px-3 block">Clients</a>
+          <a href="#nous-contacter" class="py-2 px-3 block">Nous contacter</a>
         </div>
       </div>
     </nav>
     <!-- Langs form -->
-    <div class="md:relative">
+    <!-- <div class="md:relative">
       <form
-        class="max-w-xs mx-auto md:absolute md:right-8 md:-top-6 md:z-10 md:mt-0 md:my-0 flex flex-row justify-end shadow-sm"
+        class="max-w-xs mx-auto md:absolute md:right-8 md:-top-6 md:z-9 md:mt-0 md:my-0 flex flex-row justify-end shadow-sm"
       >
         <select
           id="countries"
@@ -117,102 +120,365 @@
           <option value="eng">Anglais</option>
         </select>
       </form>
-    </div>
+    </div> -->
 
-    <!-- Home Heading -->
-    <div
-      class="my-5 mx-auto md:mt-28 md:flex md:flex-row md:justify-center items-center"
-      data-aos="fade-up"
-    >
-      <h1
-        class="text-center md:text-center uppercase font-bold text-2xl md:text-2xl flex items-center justify-center md:justify-start md:h-full"
-      >
-        Understand your needs, <br />Find solutions together
-      </h1>
-    </div>
-    <!-- Home Container -->
-    <div id="home" class="home-section px-5 my-5 md:mt-10 md:px-12 mx-auto">
+    <div id="qui-sommes-nous">
+      <!-- Home Heading -->
       <div
-        class="my-5 mx-auto md:flex md:flex-row md:justify-center items-center"
+        class="my-5 mx-auto md:mt-28 md:flex md:flex-row md:justify-center items-center"
+        data-aos="fade-up"
       >
-        <!-- Image -->
-        <img
-          class="mb-5 md:mb-0 w-full md:w-1/2 md:max-w-xs"
-          src="imgs/lamission1_black.webp"
-          alt="first image"
-          data-aos="fade-up-right"
-        />
-        <!-- Text Content -->
-        <div
-          class="text-content w-full md:w-1/2 md:ml-36 md:pl-5"
-          data-aos="fade-up-left"
+        <h1
+          class="alternategotno1d text-center md:text-center uppercase font-bold text-2xl md:text-2xl flex items-center justify-center md:justify-start md:h-full"
         >
-          <p>
-            Lamission1, spécialiste de la prospective, est un cabinet de conseil
-            en stratégie expert dans le secteur des industries créatives. Nous
-            accompagnons les entreprises, leurs décideurs et leurs équipes, de
-            la définition de leur stratégie de marque à leur déploiement
-            opérationnel.
-          </p>
-          <br />
-          <p>
-            Spécialiste de la prospective, est un cabinet de conseil en
-            stratégie expert dans le secteur des industries créatives. Nous
-            accompagnons les entreprises, leurs décideurs et leurs équipes, de
-            la définition de leur stratégie de marque à leur déploiement
-            opérationnel.
-          </p>
+          Votre succès, notre mission.
+        </h1>
+      </div>
+      <!-- Home Container -->
+      <div class="home-section px-5 my-5 md:mt-10 md:px-12 mx-auto">
+        <div
+          class="my-5 mx-auto md:flex md:flex-row md:justify-center items-center"
+        >
+          <!-- Image -->
+          <img
+            class="mb-5 md:mb-0 w-full md:w-1/2"
+            src="imgs/about_section.webp"
+            alt="first image"
+            data-aos="fade-up-right"
+          />
+          <!-- Text Content -->
+          <div
+            class="akziden text-content w-full md:w-1/2 md:ml-16 md:pl-5"
+            data-aos="fade-up-left"
+          >
+            <p>
+              Chez “LA MISSION 1” , nous nous distinguons par notre engagement
+              inébranlable envers l'excellence et l’innovation. Et comprenons
+              que chaque entreprise est unique tout comme les défis auxquels
+              elle est confrontée, et a le potentiel de réaliser de grandes
+              choses.
+            </p>
+            <br />
+            <p>
+              Nous sommes là pour vous guider à chaque étape de votre parcours,
+              que vous cherchiez à élaborer une stratégie gagnante, à
+              perfectionner vos processus ou à développer les compétences de
+              votre équipe, Nous offrons donc un accompagnement sur mesure,
+              conçu pour répondre spécifiquement aux besoins ainsi qu’aux
+              objectifs de chaque client.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- About Heading -->
-    <div
-      class="my-5 mx-auto md:mt-28 md:flex md:flex-row md:justify-center items-center"
-      data-aos="fade-up"
-    >
-      <h1
-        class="text-center md:text-center uppercase font-bold text-2xl md:text-2xl flex items-center justify-center md:justify-start md:h-full"
-      >
-        Learn more about us
-      </h1>
-    </div>
-    <!-- About Container -->
-    <div id="about" class="home-section px-5 my-5 md:mt-10 md:px-12 mx-auto">
+    <div id="nos-services">
+      <!-- About Heading -->
       <div
-        class="my-5 mx-auto md:flex md:flex-row md:justify-center items-center"
+        class="my-5 mx-auto md:mt-28 md:flex md:flex-row md:justify-center items-center"
+        data-aos="fade-up"
       >
-        <!-- Image -->
-        <img
-          class="mb-5 md:mb-0 w-full md:w-1/2 md:max-w-xs"
-          src="imgs/lamission1_black.webp"
-          alt="first image"
-          data-aos="fade-up-right"
-        />
-        <!-- Text Content -->
-        <div
-          class="text-content w-full md:w-1/2 md:ml-36 md:pl-5"
-          data-aos="fade-up-left"
+        <h1
+          class="alternategotno1d text-center md:text-center uppercase font-bold text-2xl md:text-2xl flex items-center justify-center md:justify-start md:h-full"
         >
-          <p>
-            Lamission1, spécialiste de la prospective, est un cabinet de conseil
-            en stratégie expert dans le secteur des industries créatives. Nous
-            accompagnons les entreprises, leurs décideurs et leurs équipes, de
-            la définition de leur stratégie de marque à leur déploiement
-            opérationnel.
-          </p>
-          <br />
-          <p>
-            Spécialiste de la prospective, est un cabinet de conseil en
-            stratégie expert dans le secteur des industries créatives. Nous
-            accompagnons les entreprises, leurs décideurs et leurs équipes, de
-            la définition de leur stratégie de marque à leur déploiement
-            opérationnel.
-          </p>
+          Explorez. Engagez. <br />
+          Accomplissez la mission.
+        </h1>
+      </div>
+      <!-- About Container -->
+      <div class="home-section px-5 my-5 md:mt-10 md:px-12 mx-auto">
+        <div
+          class="my-5 mx-auto md:flex md:flex-row md:justify-center items-center"
+        >
+          <!-- Image -->
+          <img
+            class="mb-5 md:mb-0 w-full md:w-1/2"
+            src="imgs/services_section.webp"
+            alt="first image"
+            data-aos="fade-up-right"
+          />
+          <!-- Text Content -->
+          <div
+            class="akziden text-content w-full md:w-1/2 md:ml-16 md:pl-5"
+            data-aos="fade-up-left"
+          >
+            <p>
+              Nos services englobent une gamme complète de solutions, allant du
+              consulting stratégique à des séances de mentoring individualisées,
+              en passant par des masterclasses dynamiques et des workshops
+              interactifs. Nous croyons en l'importance de conjuguer
+              connaissances théoriques et pratiques concrètes, nos interventions
+              sont donc à la fois informatives, inspirantes et immédiatement
+              applicables.
+            </p>
+            <br />
+            <p>
+              Chez La Mission 1, nous nous engageons à cultiver des relations
+              authentiques et durables avec nos clients. Nous ne nous contentons
+              pas de résoudre des problèmes, nous investissons dans votre succès
+              à long terme. Notre mission est de vous armer des outils, des
+              compétences et de la confiance nécessaires pour prospérer dans un
+              monde en constante évolution.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Clients Container -->
+    <div id="clients" class="home-section px-5 my-5 md:mt-10 md:px-12 mx-auto">
+      <!-- Clients Heading -->
+      <div
+        class="my-5 mx-auto md:mt-28 md:flex md:flex-row md:justify-center items-center"
+        data-aos="fade-up"
+      >
+        <h1
+          class="alternategotno1d text-center md:text-center uppercase font-bold text-2xl md:text-2xl flex items-center justify-center md:justify-start md:h-full"
+        >
+          Ils nous font confiance
+        </h1>
+      </div>
+      <div
+        class="my-5 mx-auto md:flex md:flex-row md:justify-center items-center"
+      >
+        <!-- Image -->
+        <div class="mb-4 md:mr-2" data-aos="fade-up-right">
+          <img
+            src="https://tecdn.b-cdn.net/img/new/standard/city/047.jpg"
+            class="h-auto max-w-full rounded-lg"
+            alt=""
+          />
+        </div>
+        <!-- Image -->
+        <div class="mb-4 md:mr-2" data-aos="fade-down">
+          <img
+            src="https://tecdn.b-cdn.net/img/new/standard/city/047.jpg"
+            class="h-auto max-w-full rounded-lg"
+            alt=""
+          />
+        </div>
+        <!-- Image -->
+        <div class="mb-4 md:mr-2" data-aos="fade-up">
+          <img
+            src="https://tecdn.b-cdn.net/img/new/standard/city/047.jpg"
+            class="h-auto max-w-full rounded-lg"
+            alt=""
+          />
+        </div>
+        <!-- Image -->
+        <div class="mb-4 md:mr-2" data-aos="fade-up-left">
+          <img
+            src="https://tecdn.b-cdn.net/img/new/standard/city/047.jpg"
+            class="h-auto max-w-full rounded-lg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Heading -->
+    <section id="contact" class="bg-white dark:bg-gray-900">
+      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2
+          class="alternategotno1d mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
+          data-aos="fade-up"
+        >
+          Ensemble réalisons l’impossible
+        </h2>
+        <p
+          class="akziden mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"
+          data-aos="fade-up"
+        >
+          Rejoignez-nous dans cette aventure passionnante et laissez-nous vous
+          accompagner vers de nouveaux sommets de réussite.
+        </p>
+        <form action="#" class="akziden space-y-8">
+          <div data-aos="fade-up">
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Sujet <span class="text-red-700">*</span></label
+            >
+            <input
+              type="text"
+              id="text"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="demande d’informations/opportunité de collaboration/autre"
+              required
+            />
+          </div>
+          <div data-aos="fade-up">
+            <label
+              for="fullname"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Nom complet <span class="text-red-700">*</span></label
+            >
+            <input
+              type="text"
+              id="fullname"
+              class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="Votre nom complet"
+              required
+            />
+          </div>
+          <div data-aos="fade-up">
+            <label
+              for="entreprise"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Entreprise <span class="text-red-700">*</span>
+            </label>
+            <input
+              type="text"
+              id="entreprise"
+              class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="Votre entreprise"
+              required
+            />
+          </div>
+          <div data-aos="fade-up">
+            <label
+              for="tel"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Num de tél <span class="text-red-700">*</span>
+            </label>
+            <input
+              type="text"
+              id="tel"
+              class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="+212-000000000"
+              required
+            />
+          </div>
+          <div data-aos="fade-up">
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Adresse email <span class="text-red-700">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="votreadresse@email.com"
+              required
+            />
+          </div>
+          <div data-aos="fade-up">
+            <label
+              for="fonction"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Fonction <span class="text-red-700">*</span>
+            </label>
+            <input
+              type="text"
+              id="fonction"
+              class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="Votre fonction"
+              required
+            />
+          </div>
+          <div data-aos="fade-up">
+            <label
+              for="section"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Secteur <span class="text-red-700">*</span>
+            </label>
+            <input
+              type="text"
+              id="Secteur"
+              class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="Votre secteur"
+              required
+            />
+          </div>
+          <div data-aos="fade-up">
+            <label
+              for="pays"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Pays
+            </label>
+            <input
+              type="text"
+              id="pays"
+              class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="Votre pays"
+            />
+          </div>
+          <div data-aos="fade-up" class="sm:col-span-2">
+            <label
+              for="message"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+              >Your message</label
+            >
+            <textarea
+              id="message"
+              rows="6"
+              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="Leave a comment..."
+            ></textarea>
+          </div>
+          <button
+            data-aos="fade-up"
+            type="submit"
+            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-green-700 sm:w-fit hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            Send message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+
+    <footer class="bg-gray-100 m-4">
+      <div class="w-full max-w-screen-xl p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="./"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="imgs/mission1_logo.webp"
+              class="h-8 w-full"
+              alt="Lamission1 logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Lamission1</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6"
+                >Qui sommes-nous</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Services</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2024
+          <a href="https://flowbite.com/" class="hover:underline">Mission1™</a>.
+          All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!-- Scripts section -->
     <script>
       function toggleDropdown() {
         const dropdownMenu = document.getElementById("dropdownMenu");
