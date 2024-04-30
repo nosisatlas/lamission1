@@ -13,6 +13,22 @@
   src: url("path/to/akzidenzgroteskpro_cn.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Futura75Bold";
+  src: url("path/to/FUTURA75BOLD.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Futura55Regular";
+  src: url("path/to/FUTURA55REGULAR.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden !important; */
+}
+
 .gtpressuramono {
   font-family: "GT Pressura Mono", monospace;
   font-weight: 400;
@@ -35,4 +51,24 @@
   color: rgb(0, 0, 0);
   font-size: 16px;
   line-height: 23px;
+}
+
+.futura {
+  font-family: "Futura55Regular", sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.img-container {
+  /* width: 300px;
+  height: 300px; */
+}
+
+.navbar-logo {
+  /* width: 100%;
+  max-width: none; */
 }
