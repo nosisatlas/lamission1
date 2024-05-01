@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
 
     // Email address where you want to receive the messages
-    $to = "fz.farhane109@gmail.com";
+    $to = "nosisatlas@gmail.com";
 
     // Subject of the email
     $subject = "New Contact Form Submission - Lamission 1 Website";
